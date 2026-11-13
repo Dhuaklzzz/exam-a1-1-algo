@@ -1,0 +1,11 @@
+function accesSalle(estMembre, aInvitation, estBanni) {
+  if ((estMembre == true || aInvitation == true) && estBanni == false) {
+    return true;
+  } else {
+    return false;
+  }
+}
+
+console.log(accesSalle(true, false, false)); // true
+console.log(accesSalle(false, true, false)); // true
+console.log(accesSalle(true, true, true)); // false
